@@ -381,7 +381,13 @@ require('lazy').setup({
         --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
         --   },
         -- },
+        defaults = {
+          file_ignore_patterns = { "^%.git/" },
+        },
         pickers = {
+          find_files = {
+            hidden = true,
+          },
           buffers = {
             show_all_buffers = true,
             sort_lastused = true,
